@@ -1,0 +1,26 @@
+@import "../../style/mixins.scss";
+
+.navbar {
+  margin-bottom: 2rem;
+  display: flex;
+  color: var(--text-light-color);
+  align-items: center;
+  background: rgba(0,0,0,0);
+  margin: 15px solid rgba(0,0,0,0.3);
+  height: 140px;
+
+  .btn-logout {
+    @include link();
+    float: right;
+    color: unset;
+    font-size: 26px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  a {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: unset;
+  }
+}

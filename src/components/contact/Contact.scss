@@ -1,0 +1,29 @@
+@import "../../style/mixins.scss";
+
+.contact {
+  @include card();
+  margin: 1.5rem 0;
+
+  color: whitesmoke;
+  .name,
+  .email,
+  .subject {
+    margin-bottom: 1rem;
+  }
+
+  .subject {
+    color: black;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 1.3rem;
+    background: var(--dark-color);
+  }
+
+  .btn-delete {
+    @include btn();
+    margin-right: 1rem;
+    background: var(--danger-color);
+    color: var(--text-light-color);
+  }
+}

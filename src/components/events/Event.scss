@@ -1,0 +1,71 @@
+@import "../../style/mixins.scss";
+
+.event-card{
+  display: flex;
+  margin: 100px 0 0 2%;
+  flex-grow: 1;
+  height: 100%;
+  width: 25%;
+}
+
+.event-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.event {
+  @include card();
+  margin: 1.5rem 0;
+
+  .title,
+  .description,
+  .code {
+    margin-bottom: 1rem;
+    //opacity:1;
+  }
+
+  .code {
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 1.3rem;
+    background: var(--dark-color);
+  }
+
+  .btn-delete,
+  .btn-edit {
+    @include btn();
+    margin-right: 1rem;
+  }
+
+  .btn-edit {
+    background: var(--primary-color);
+    color: var(--text-light-color);
+  }
+
+  .btn-delete {
+    background: var(--danger-color);
+    color: var(--text-light-color);
+  }
+}
+
+.event-editor {
+  @include card();
+
+  .btn-save,
+  .btn-cancel {
+    @include btn();
+    margin-right: 1rem;
+  }
+
+  .btn-save {
+    background: var(--primary-color);
+    color: var(--text-light-color);
+  }
+
+  .btn-cancel {
+    background: var(--danger-color);
+    color: var(--text-light-color);
+  }
+}

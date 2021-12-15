@@ -1,0 +1,16 @@
+.wrapper {
+    text-align: center;
+  }
+  
+  .validate-button {
+    background-color: white;
+    color: DarkSlateGrey;
+    width: 280px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 150px;
+  }
+  

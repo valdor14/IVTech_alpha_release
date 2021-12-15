@@ -1,0 +1,39 @@
+@import "../../style/mixins.scss";
+
+.user {
+    border-radius: 10px;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: var(--box-shadow);
+    margin: 1.5rem 0;
+    
+    .roleSelector {
+        position: relative;
+        background-color: rgba(255,255,255,0);
+        width:10%;
+        text-align-last:center;
+        border:2px solid rgb(0, 0, 0);
+        top: -27px;
+        right: -125px;
+    }
+    
+    .usertext {
+      margin-bottom: 1rem;
+    }
+
+    .btn-delete,
+    .btn-save {
+        @include btn();
+        margin-right: 1rem;
+    }
+
+    .btn-save {
+        background: var(--primary-color);
+        color: var(--text-light-color);
+    }
+
+    .btn-delete {
+        background: var(--danger-color);
+        color: var(--text-light-color);
+    }
+}
